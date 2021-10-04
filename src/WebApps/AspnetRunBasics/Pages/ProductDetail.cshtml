@@ -11,7 +11,7 @@
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a asp-page="Index">Home</a></li>
                     <li class="breadcrumb-item"><a asp-page="Product">Product</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">@Model.Product.Name</li>
+                    <li class="breadcrumb-item active" aria-current="page">@Model.Product.title</li>
                 </ol>
             </nav>
         </div>
@@ -25,8 +25,8 @@
             <div class="card bg-light mb-3">
                 <div class="card-body">
                     <a href="" data-toggle="modal" data-target="#productModal">
-                        <img class="img-fluid" src="~/images/product/@Model.Product.ImageFile.Replace('-','x')" />
-                        <p class="text-center">@Model.Product.Name</p>
+                        <img class="img-fluid" src="~/images/product/@Model.Product.image.Replace('-','x')" />
+                        <p class="text-center">@Model.Product.title</p>
                     </a>
                 </div>
             </div>
@@ -36,8 +36,8 @@
         <div class="col-12 col-lg-6 add_to_cart_block">
             <div class="card bg-light mb-3">
                 <div class="card-body">
-                    <p class="price">@Model.Product.Price $</p>
-                    <p class="price_discounted">@(Model.Product.Price + 120) $</p>
+                    <p class="price">@Model.Product.price $</p>
+                    <p class="price_discounted">@(Model.Product.price + 120) $</p>
                     <form asp-page-handler="AddToCart" method="post" name="addToCartForm" id="add_cart_form">
                         <div class="form-group">
                             <label for="colors">Color</label>
@@ -104,7 +104,7 @@
                         @Model.Product.Summary                        
                     </p>
                     <p class="card-text">
-                        @Model.Product.Description                        
+                        @Model.Product.description                        
                     </p>
                 </div>
             </div>

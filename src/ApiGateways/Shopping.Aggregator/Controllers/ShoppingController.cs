@@ -36,11 +36,11 @@ namespace Shopping.Aggregator.Controllers
                 var product = await _catalogService.GetCatalog(item.ProductId);
 
                 // set additional product fields
-                item.ProductName = product.Name;
-                item.Category = product.Category;
+                item.ProductName = product.title;
+                item.Category = product.category;
                 item.Summary = product.Summary;
-                item.Description = product.Description;
-                item.ImageFile = product.ImageFile;
+                item.Description = product.description;
+                item.ImageFile = product.image;
             }
 
             var orders = await _orderService.GetOrdersByUserName(userName);

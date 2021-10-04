@@ -17,7 +17,7 @@ namespace AspnetRunBasics.Extensions
 
             var dataAsString = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
 
-            return JsonSerializer.Deserialize<T>(dataAsString, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+            return JsonSerializer.Deserialize<T>(dataAsString, new JsonSerializerOptions { PropertyNameCaseInsensitive = false });
         }
 
         public static Task<HttpResponseMessage> PostAsJson<T>(this HttpClient httpClient, string url, T data)
