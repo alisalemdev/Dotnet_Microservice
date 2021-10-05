@@ -1,5 +1,10 @@
+using Common.Logging;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
+using Serilog;
+using Serilog.Sinks.Elasticsearch;
+using System;
+using System.Reflection;
 
 namespace AspnetRunBasics
 {
@@ -8,11 +13,11 @@ namespace AspnetRunBasics
         public static void Main(string[] args)
         {
             CreateHostBuilder(args).Build().Run();
-           
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
+                .UseSerilog(Serilogger.Configure)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
