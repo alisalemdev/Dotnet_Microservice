@@ -49,7 +49,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Identity.Server", "Service\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspnetRunBasics", "WebApps\AspnetRunBasics\AspnetRunBasics.csproj", "{D59004BD-CE16-4E3C-9BAB-B066B06A9432}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.Logging", "BuildingBlocks\Common.Logging\Common.Logging.csproj", "{95BC637B-9CAE-4CA8-90E6-37601355F617}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common.Logging", "BuildingBlocks\Common.Logging\Common.Logging.csproj", "{95BC637B-9CAE-4CA8-90E6-37601355F617}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "webStatus", "WebApps\webStatus\webStatus.csproj", "{EBEDC3AF-3E1D-4720-84C0-C6C32D1AB78B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -117,6 +119,10 @@ Global
 		{95BC637B-9CAE-4CA8-90E6-37601355F617}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{95BC637B-9CAE-4CA8-90E6-37601355F617}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{95BC637B-9CAE-4CA8-90E6-37601355F617}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBEDC3AF-3E1D-4720-84C0-C6C32D1AB78B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBEDC3AF-3E1D-4720-84C0-C6C32D1AB78B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBEDC3AF-3E1D-4720-84C0-C6C32D1AB78B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBEDC3AF-3E1D-4720-84C0-C6C32D1AB78B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -141,6 +147,7 @@ Global
 		{BB0536F9-5CEF-49EC-855A-D4CAB6439579} = {3AEA690E-F81A-435D-BC3E-058113299382}
 		{D59004BD-CE16-4E3C-9BAB-B066B06A9432} = {1492DD54-8223-4985-B6DB-8CA6A5839C8F}
 		{95BC637B-9CAE-4CA8-90E6-37601355F617} = {9404B6AD-555F-4B73-BF73-9D1740468203}
+		{EBEDC3AF-3E1D-4720-84C0-C6C32D1AB78B} = {1492DD54-8223-4985-B6DB-8CA6A5839C8F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {53750EF2-8EFA-4883-AEBF-8ED738DE8253}
